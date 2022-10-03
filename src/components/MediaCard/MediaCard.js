@@ -46,7 +46,9 @@ export default function MediaCard() {
             >
               <ArrowDropUpIcon />
             </IconButton>
-            35.8k
+            <Typography variant="subtitle1" color="text.primary">
+              35.8k
+            </Typography>
             <IconButton
               size="small"
               aria-label="downvote"
