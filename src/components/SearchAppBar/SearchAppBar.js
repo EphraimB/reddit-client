@@ -173,31 +173,32 @@ export default function SearchAppBar() {
           </IconButton>
           <Typography
             variant="h6"
-            noWrap
             component="div"
           >
             Reddit client
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'block', md: 'none' } }}>
-            <IconButton 
-              size="large" 
-              aria-label="search" 
-              color="inherit"
-            >
-              <SearchIcon />
-            </IconButton>
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ 'aria-label': 'search' }}
+              />
+            </Search>
           </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-          <Search sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ 'aria-label': 'search' }}
+              />
+            </Search>
           <IconButton
               size="large"
               aria-label="show 0 new notifications"
